@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45382C2A3AA900D77A8D /* RealmManager.swift */; };
 		07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */; };
 		07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BF2C2A397E009EA2FE /* ContentView.swift */; };
 		07A405C22C2A397F009EA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C12C2A397F009EA2FE /* Assets.xcassets */; };
 		07A405C52C2A397F009EA2FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C42C2A397F009EA2FE /* Preview Assets.xcassets */; };
+		6E1DBC010BF83FA734D30897 /* Pods_SimpleSpend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044FE0D921BA75DE0D3CCB44 /* Pods_SimpleSpend.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044FE0D921BA75DE0D3CCB44 /* Pods_SimpleSpend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSpend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		075A45382C2A3AA900D77A8D /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		07A405BA2C2A397E009EA2FE /* SimpleSpend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSpend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpendApp.swift; sourceTree = "<group>"; };
 		07A405BF2C2A397E009EA2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07A405C12C2A397F009EA2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A405C42C2A397F009EA2FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46B0FFE635EFF7E0AC76272E /* Pods-SimpleSpend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSpend.release.xcconfig"; path = "Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend.release.xcconfig"; sourceTree = "<group>"; };
+		8C92EA87F41609056C147311 /* Pods-SimpleSpend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSpend.debug.xcconfig"; path = "Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,63 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1DBC010BF83FA734D30897 /* Pods_SimpleSpend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075A45322C2A3A4800D77A8D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				075A45372C2A3A9700D77A8D /* Charts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		075A45332C2A3A5B00D77A8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		075A45342C2A3A6400D77A8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		075A45352C2A3A8000D77A8D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		075A45362C2A3A8700D77A8D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		075A45372C2A3A9700D77A8D /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		07A405B12C2A397E009EA2FE = {
 			isa = PBXGroup;
 			children = (
 				07A405BC2C2A397E009EA2FE /* SimpleSpend */,
 				07A405BB2C2A397E009EA2FE /* Products */,
+				C391B5BF19F12ACB53B971E2 /* Pods */,
+				98B395701C5564DFAFF66E63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +103,16 @@
 		07A405BC2C2A397E009EA2FE /* SimpleSpend */ = {
 			isa = PBXGroup;
 			children = (
+				075A45362C2A3A8700D77A8D /* Utilities */,
+				075A45352C2A3A8000D77A8D /* Screens */,
+				075A45342C2A3A6400D77A8D /* Models */,
+				075A45332C2A3A5B00D77A8D /* Extensions */,
+				075A45322C2A3A4800D77A8D /* Components */,
 				07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */,
 				07A405BF2C2A397E009EA2FE /* ContentView.swift */,
 				07A405C12C2A397F009EA2FE /* Assets.xcassets */,
 				07A405C32C2A397F009EA2FE /* Preview Content */,
+				075A45382C2A3AA900D77A8D /* RealmManager.swift */,
 			);
 			path = SimpleSpend;
 			sourceTree = "<group>";
@@ -67,6 +125,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		98B395701C5564DFAFF66E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				044FE0D921BA75DE0D3CCB44 /* Pods_SimpleSpend.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C391B5BF19F12ACB53B971E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C92EA87F41609056C147311 /* Pods-SimpleSpend.debug.xcconfig */,
+				46B0FFE635EFF7E0AC76272E /* Pods-SimpleSpend.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A405C82C2A397F009EA2FE /* Build configuration list for PBXNativeTarget "SimpleSpend" */;
 			buildPhases = (
+				8AE1FE55828339FD6E83C26C /* [CP] Check Pods Manifest.lock */,
 				07A405B62C2A397E009EA2FE /* Sources */,
 				07A405B72C2A397E009EA2FE /* Frameworks */,
 				07A405B82C2A397E009EA2FE /* Resources */,
+				3A1D70D55B023AA390743D49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +209,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A1D70D55B023AA390743D49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AE1FE55828339FD6E83C26C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleSpend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07A405B62C2A397E009EA2FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +258,7 @@
 			files = (
 				07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */,
 				07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */,
+				075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +381,7 @@
 		};
 		07A405C92C2A397F009EA2FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C92EA87F41609056C147311 /* Pods-SimpleSpend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +411,7 @@
 		};
 		07A405CA2C2A397F009EA2FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B0FFE635EFF7E0AC76272E /* Pods-SimpleSpend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
