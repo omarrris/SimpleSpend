@@ -21,6 +21,7 @@
 		075A454F2C2A610200D77A8D /* ExpensesBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A454E2C2A610200D77A8D /* ExpensesBreakdown.swift */; };
 		075A45512C2A611D00D77A8D /* MonthChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45502C2A611D00D77A8D /* MonthChart.swift */; };
 		075A45532C2A614700D77A8D /* PeriodChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45522C2A614700D77A8D /* PeriodChart.swift */; };
+		075A45552C2A618600D77A8D /* WeekChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45542C2A618600D77A8D /* WeekChart.swift */; };
 		07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */; };
 		07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BF2C2A397E009EA2FE /* ContentView.swift */; };
 		07A405C22C2A397F009EA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C12C2A397F009EA2FE /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		075A454E2C2A610200D77A8D /* ExpensesBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesBreakdown.swift; sourceTree = "<group>"; };
 		075A45502C2A611D00D77A8D /* MonthChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthChart.swift; sourceTree = "<group>"; };
 		075A45522C2A614700D77A8D /* PeriodChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodChart.swift; sourceTree = "<group>"; };
+		075A45542C2A618600D77A8D /* WeekChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekChart.swift; sourceTree = "<group>"; };
 		07A405BA2C2A397E009EA2FE /* SimpleSpend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSpend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpendApp.swift; sourceTree = "<group>"; };
 		07A405BF2C2A397E009EA2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				075A454E2C2A610200D77A8D /* ExpensesBreakdown.swift */,
 				075A45502C2A611D00D77A8D /* MonthChart.swift */,
 				075A45522C2A614700D77A8D /* PeriodChart.swift */,
+				075A45542C2A618600D77A8D /* WeekChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */,
 				075A45452C2A603600D77A8D /* Categories.swift in Sources */,
 				075A45432C2A600100D77A8D /* Add.swift in Sources */,
+				075A45552C2A618600D77A8D /* WeekChart.swift in Sources */,
 				075A453F2C2A5FA400D77A8D /* ExpenseUtils.swift in Sources */,
 				075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */,
 			);
