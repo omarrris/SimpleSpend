@@ -29,6 +29,8 @@
 		075A455F2C2A623400D77A8D /* TotalCurrencyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A455E2C2A623400D77A8D /* TotalCurrencyBox.swift */; };
 		075A45612C2A626D00D77A8D /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45602C2A626D00D77A8D /* Double.swift */; };
 		075A45632C2A62A600D77A8D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45622C2A62A600D77A8D /* Category.swift */; };
+		075A45652C2A62C500D77A8D /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45642C2A62C500D77A8D /* Expense.swift */; };
+		075A45672C2A62D500D77A8D /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45662C2A62D500D77A8D /* Period.swift */; };
 		07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */; };
 		07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BF2C2A397E009EA2FE /* ContentView.swift */; };
 		07A405C22C2A397F009EA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C12C2A397F009EA2FE /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 		075A455E2C2A623400D77A8D /* TotalCurrencyBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCurrencyBox.swift; sourceTree = "<group>"; };
 		075A45602C2A626D00D77A8D /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		075A45622C2A62A600D77A8D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		075A45642C2A62C500D77A8D /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		075A45662C2A62D500D77A8D /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		07A405BA2C2A397E009EA2FE /* SimpleSpend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSpend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpendApp.swift; sourceTree = "<group>"; };
 		07A405BF2C2A397E009EA2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				075A45622C2A62A600D77A8D /* Category.swift */,
+				075A45642C2A62C500D77A8D /* Expense.swift */,
+				075A45662C2A62D500D77A8D /* Period.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				075A45412C2A5FDF00D77A8D /* KeyboardUtils.swift in Sources */,
 				075A454F2C2A610200D77A8D /* ExpensesBreakdown.swift in Sources */,
 				075A45592C2A61D200D77A8D /* ExpensesList.swift in Sources */,
+				075A45672C2A62D500D77A8D /* Period.swift in Sources */,
 				075A453B2C2A5F5B00D77A8D /* Color.swift in Sources */,
 				075A453D2C2A5F8600D77A8D /* DateUtils.swift in Sources */,
 				075A45492C2A607900D77A8D /* Reports.swift in Sources */,
@@ -338,6 +345,7 @@
 				075A45452C2A603600D77A8D /* Categories.swift in Sources */,
 				075A45432C2A600100D77A8D /* Add.swift in Sources */,
 				075A45552C2A618600D77A8D /* WeekChart.swift in Sources */,
+				075A45652C2A62C500D77A8D /* Expense.swift in Sources */,
 				075A455B2C2A61EF00D77A8D /* PeriodOverview.swift in Sources */,
 				075A453F2C2A5FA400D77A8D /* ExpenseUtils.swift in Sources */,
 				075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */,
