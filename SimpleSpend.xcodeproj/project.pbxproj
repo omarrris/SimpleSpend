@@ -19,6 +19,7 @@
 		075A454B2C2A60A000D77A8D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A454A2C2A60A000D77A8D /* Settings.swift */; };
 		075A454D2C2A60C100D77A8D /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A454C2C2A60C100D77A8D /* SignIn.swift */; };
 		075A454F2C2A610200D77A8D /* ExpensesBreakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A454E2C2A610200D77A8D /* ExpensesBreakdown.swift */; };
+		075A45512C2A611D00D77A8D /* MonthChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45502C2A611D00D77A8D /* MonthChart.swift */; };
 		07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */; };
 		07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BF2C2A397E009EA2FE /* ContentView.swift */; };
 		07A405C22C2A397F009EA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C12C2A397F009EA2FE /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		075A454A2C2A60A000D77A8D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		075A454C2C2A60C100D77A8D /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		075A454E2C2A610200D77A8D /* ExpensesBreakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesBreakdown.swift; sourceTree = "<group>"; };
+		075A45502C2A611D00D77A8D /* MonthChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthChart.swift; sourceTree = "<group>"; };
 		07A405BA2C2A397E009EA2FE /* SimpleSpend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSpend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpendApp.swift; sourceTree = "<group>"; };
 		07A405BF2C2A397E009EA2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				075A454E2C2A610200D77A8D /* ExpensesBreakdown.swift */,
+				075A45502C2A611D00D77A8D /* MonthChart.swift */,
 			);
 			path = Charts;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				075A45512C2A611D00D77A8D /* MonthChart.swift in Sources */,
 				075A45472C2A605600D77A8D /* Expenses.swift in Sources */,
 				075A454D2C2A60C100D77A8D /* SignIn.swift in Sources */,
 				07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */,
