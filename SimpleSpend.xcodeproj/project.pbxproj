@@ -175,16 +175,16 @@
 		07A405BC2C2A397E009EA2FE /* SimpleSpend */ = {
 			isa = PBXGroup;
 			children = (
+				07A405BF2C2A397E009EA2FE /* ContentView.swift */,
+				07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */,
+				075A45382C2A3AA900D77A8D /* RealmManager.swift */,
 				075A45362C2A3A8700D77A8D /* Utilities */,
 				075A45352C2A3A8000D77A8D /* Screens */,
 				075A45342C2A3A6400D77A8D /* Models */,
 				075A45332C2A3A5B00D77A8D /* Extensions */,
 				075A45322C2A3A4800D77A8D /* Components */,
-				07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */,
-				07A405BF2C2A397E009EA2FE /* ContentView.swift */,
 				07A405C12C2A397F009EA2FE /* Assets.xcassets */,
 				07A405C32C2A397F009EA2FE /* Preview Content */,
-				075A45382C2A3AA900D77A8D /* RealmManager.swift */,
 			);
 			path = SimpleSpend;
 			sourceTree = "<group>";
