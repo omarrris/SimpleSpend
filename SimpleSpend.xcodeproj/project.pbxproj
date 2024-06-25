@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A45382C2A3AA900D77A8D /* RealmManager.swift */; };
 		075A453B2C2A5F5B00D77A8D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A453A2C2A5F5B00D77A8D /* Color.swift */; };
+		075A453D2C2A5F8600D77A8D /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A453C2C2A5F8600D77A8D /* DateUtils.swift */; };
 		07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */; };
 		07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BF2C2A397E009EA2FE /* ContentView.swift */; };
 		07A405C22C2A397F009EA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C12C2A397F009EA2FE /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		044FE0D921BA75DE0D3CCB44 /* Pods_SimpleSpend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSpend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075A45382C2A3AA900D77A8D /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		075A453A2C2A5F5B00D77A8D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		075A453C2C2A5F8600D77A8D /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		07A405BA2C2A397E009EA2FE /* SimpleSpend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSpend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpendApp.swift; sourceTree = "<group>"; };
 		07A405BF2C2A397E009EA2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				075A453A2C2A5F5B00D77A8D /* Color.swift */,
+				075A453C2C2A5F8600D77A8D /* DateUtils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */,
 				075A453B2C2A5F5B00D77A8D /* Color.swift in Sources */,
+				075A453D2C2A5F8600D77A8D /* DateUtils.swift in Sources */,
 				07A405BE2C2A397E009EA2FE /* SimpleSpendApp.swift in Sources */,
 				075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */,
 			);
