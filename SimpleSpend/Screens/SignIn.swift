@@ -6,7 +6,7 @@ struct SignIn: View {
 
     var body: some View {
         VStack {
-            Image ("simplespendmain")
+            Image("simplespendmain")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 200)

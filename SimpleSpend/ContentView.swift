@@ -5,6 +5,7 @@ struct ContentView: View {
     @State private var isSignedIn = UserDefaults.standard.string(forKey: "userIdentifier") != nil
 
     var body: some View {
+        if isSignedIn {
             TabView {
                 Expenses(expenses: realmManager.expenses)
                     .environmentObject(realmManager)
@@ -24,18 +25,21 @@ struct ContentView: View {
                         Label("Add", systemImage: "plus")
                     }
                 
-                Settings()
+                Settings(isSignedIn: $isSignedIn)
                     .environmentObject(realmManager)
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")
                     }
             }
+        } else {
+            SignIn(isSignedIn: $isSignedIn)
         }
     }
-
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

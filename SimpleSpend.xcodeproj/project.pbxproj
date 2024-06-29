@@ -36,6 +36,7 @@
 		07A405C02C2A397E009EA2FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A405BF2C2A397E009EA2FE /* ContentView.swift */; };
 		07A405C22C2A397F009EA2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C12C2A397F009EA2FE /* Assets.xcassets */; };
 		07A405C52C2A397F009EA2FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A405C42C2A397F009EA2FE /* Preview Assets.xcassets */; };
+		07A6DE542C30C59B00AF0CFE /* DarkModeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A6DE532C30C59B00AF0CFE /* DarkModeModifier.swift */; };
 		6E1DBC010BF83FA734D30897 /* Pods_SimpleSpend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044FE0D921BA75DE0D3CCB44 /* Pods_SimpleSpend.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		07A405BF2C2A397E009EA2FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07A405C12C2A397F009EA2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A405C42C2A397F009EA2FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07A6DE522C2E6BB000AF0CFE /* SimpleSpend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleSpend.entitlements; sourceTree = "<group>"; };
+		07A6DE532C30C59B00AF0CFE /* DarkModeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeModifier.swift; sourceTree = "<group>"; };
 		46B0FFE635EFF7E0AC76272E /* Pods-SimpleSpend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSpend.release.xcconfig"; path = "Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend.release.xcconfig"; sourceTree = "<group>"; };
 		8C92EA87F41609056C147311 /* Pods-SimpleSpend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSpend.debug.xcconfig"; path = "Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +178,7 @@
 		07A405BC2C2A397E009EA2FE /* SimpleSpend */ = {
 			isa = PBXGroup;
 			children = (
+				07A6DE522C2E6BB000AF0CFE /* SimpleSpend.entitlements */,
 				07A405BF2C2A397E009EA2FE /* ContentView.swift */,
 				07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */,
 				075A45382C2A3AA900D77A8D /* RealmManager.swift */,
@@ -185,6 +189,7 @@
 				075A45322C2A3A4800D77A8D /* Components */,
 				07A405C12C2A397F009EA2FE /* Assets.xcassets */,
 				07A405C32C2A397F009EA2FE /* Preview Content */,
+				07A6DE532C30C59B00AF0CFE /* DarkModeModifier.swift */,
 			);
 			path = SimpleSpend;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				075A45552C2A618600D77A8D /* WeekChart.swift in Sources */,
 				075A45652C2A62C500D77A8D /* Expense.swift in Sources */,
 				075A455B2C2A61EF00D77A8D /* PeriodOverview.swift in Sources */,
+				07A6DE542C30C59B00AF0CFE /* DarkModeModifier.swift in Sources */,
 				075A453F2C2A5FA400D77A8D /* ExpenseUtils.swift in Sources */,
 				075A45392C2A3AA900D77A8D /* RealmManager.swift in Sources */,
 				075A455F2C2A623400D77A8D /* TotalCurrencyBox.swift in Sources */,
@@ -481,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleSpend/SimpleSpend.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleSpend/Preview Content\"";
@@ -511,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleSpend/SimpleSpend.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleSpend/Preview Content\"";
