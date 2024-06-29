@@ -132,11 +132,13 @@ struct Add: View {
         .onAppear {
             onAppear()
         }
+        .darkMode()
     }
 }
 
 struct Add_Previews: PreviewProvider {
     static var previews: some View {
         Add()
+            .darkMode()
     }
 }

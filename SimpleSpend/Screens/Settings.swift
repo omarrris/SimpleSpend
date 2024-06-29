@@ -52,6 +52,7 @@ struct Settings: View {
             .navigationTitle("Settings")
             .padding(.top, 16)
         }
+        .darkMode()
     }
 
     func signOut() {
@@ -66,5 +67,6 @@ struct Settings: View {
 struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         Settings(isSignedIn: .constant(true))
+            .darkMode()
     }
 }

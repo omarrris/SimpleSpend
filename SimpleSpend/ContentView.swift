@@ -31,8 +31,10 @@ struct ContentView: View {
                         Label("Settings", systemImage: "gearshape.fill")
                     }
             }
+            .darkMode()
         } else {
             SignIn(isSignedIn: $isSignedIn)
+                .darkMode()
         }
     }
 }
@@ -40,6 +42,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
+            .darkMode()
     }
 }

@@ -25,9 +25,8 @@ struct SignIn: View {
             .signInWithAppleButtonStyle(.black)
             .frame(width: 200, height: 45)
             .padding()
-            
-            
         }
+        .darkMode()
     }
     private func handleAuthorization(authorization: ASAuthorization) {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
@@ -50,6 +49,7 @@ struct SignIn: View {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignIn(isSignedIn: .constant(false))
+            .darkMode()
     }
 }
 

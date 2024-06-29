@@ -52,6 +52,7 @@ struct Reports: View {
                 }
             }
         }
+        .darkMode()
         .onChange(of: period) { _ in
             self.tabViewSelection = 0
             setPagesRange()
@@ -62,5 +63,6 @@ struct Reports: View {
 struct Reports_Previews: PreviewProvider {
     static var previews: some View {
         Reports()
+            .darkMode()
     }
 }

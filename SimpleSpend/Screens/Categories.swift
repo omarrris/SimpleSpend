@@ -101,11 +101,13 @@ struct Categories: View {
                }
            }
        }
+       .darkMode()
    }
 }
 
 struct Categories_Previews: PreviewProvider {
    static var previews: some View {
        Categories()
+           .darkMode()
    }
 }

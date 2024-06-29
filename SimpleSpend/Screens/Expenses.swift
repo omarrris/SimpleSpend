@@ -56,6 +56,7 @@ struct Expenses: View {
             )
             .navigationTitle("Expenses")
         }
+        .darkMode()
         .searchable(
             text: $searchQuery,
             placement: .automatic,
@@ -73,5 +74,6 @@ struct Expenses: View {
 struct Expenses_Previews: PreviewProvider {
     static var previews: some View {
         Expenses(expenses: RealmManager().expenses)
+            .darkMode()
     }
 }
