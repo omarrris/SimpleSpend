@@ -22,7 +22,7 @@ Developed using Swift and SwiftUI, SimpleSpend integrates secure authentication 
 
 ## Screenshots
 <img src="https://github.com/omarrris/SimpleSpend/assets/100310239/7bafa627-a972-4a5d-8ebc-acf65612155b" width="400" height="790">
-<img src="(https://github.com/omarrris/SimpleSpend/assets/100310239/1d81c81a-f519-4fa1-9e6f-1efd761e9dde" width="400" height="790">
+<img src="https://github.com/omarrris/SimpleSpend/assets/100310239/1d81c81a-f519-4fa1-9e6f-1efd761e9dde" width="400" height="790">
 <img src="https://github.com/omarrris/SimpleSpend/assets/100310239/89ed13c3-c279-4dc2-82a2-b69e497034f6" width="400" height="790">
 <img src="https://github.com/omarrris/SimpleSpend/assets/100310239/30cf3603-b7a1-4e52-870e-691ddf2fb622" width="400" height="790">
 <img src="https://github.com/omarrris/SimpleSpend/assets/100310239/7c03c473-4a80-485f-951c-42b81dff26df" width="400" height="790">
