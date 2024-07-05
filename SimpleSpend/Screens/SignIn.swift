@@ -1,36 +1,38 @@
 import SwiftUI
 
 struct SignIn: View {
+    @Binding var isStarted: Bool
+
     var body: some View {
-        NavigationView {
-            VStack {
-                Image("simplespendmain")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 300, height: 200)
-                    .padding(.top, -50)
-                
-                NavigationLink(destination: ContentView()) {
-                    Text("Get Started")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: 200, height: 50)
-                        .background(
-                            LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]), startPoint: .leading, endPoint: .trailing)
-                        )
-                        .cornerRadius(25)
-                }
-                .padding()
+        VStack {
+            Image("simplespendmain") // Your logo
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 200)
+                .padding(.top, -50)
+            
+            Button(action: {
+                isStarted = true
+            }) {
+                Text("Start Saving!")
+                    .font(.headline)
+                    .foregroundColor(.black)
+                    .padding()
+                    .frame(width: 150, height: 50)
+                    .background(
+                        LinearGradient(gradient: Gradient(colors: [Color(hex: "#dede50"), Color(hex: "#60a14a")]), startPoint: .leading, endPoint: .trailing)
+                )
+            .cornerRadius(25)
             }
-            .darkMode()
+            .padding()
         }
+        .darkMode()
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct SignIn_Previews: PreviewProvider {
     static var previews: some View {
-        SignIn()
+        SignIn(isStarted: .constant(false))
             .darkMode()
     }
 }

@@ -2,10 +2,10 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var realmManager = RealmManager()
-    @State private var isSignedIn = UserDefaults.standard.string(forKey: "userIdentifier") != nil
+    @State private var isStarted = false
 
     var body: some View {
-        if isSignedIn {
+        if isStarted {
             TabView {
                 Expenses(expenses: realmManager.expenses)
                     .environmentObject(realmManager)
@@ -25,7 +25,7 @@ struct ContentView: View {
                         Label("Add", systemImage: "plus")
                     }
                 
-                Settings(isSignedIn: $isSignedIn)
+                Settings()
                     .environmentObject(realmManager)
                     .tabItem {
                         Label("Settings", systemImage: "gearshape.fill")
@@ -33,8 +33,7 @@ struct ContentView: View {
             }
             .darkMode()
         } else {
-            SignIn(isSignedIn: $isSignedIn)
-                .darkMode()
+            SignIn(isStarted: $isStarted)
         }
     }
 }
