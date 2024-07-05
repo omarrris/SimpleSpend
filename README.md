@@ -21,12 +21,12 @@ Developed using Swift and SwiftUI, SimpleSpend integrates secure authentication 
 
 
 ## Screenshots
-<img src="https://github.com/omarrris/SimpleSpend/assets/100310239/573ede0c-3275-4766-8e3a-137965043a3f" width="400" height="790">
-![Simulator Screenshot - iPhone 14 Pro Max - 2024-06-29 at 19 49 38](https://github.com/omarrris/SimpleSpend/assets/100310239/573ede0c-3275-4766-8e3a-137965043a3f)
-![Simulator Screenshot - iPhone 14 Pro Max - 2024-06-29 at 19 49 27](https://github.com/omarrris/SimpleSpend/assets/100310239/1d81c81a-f519-4fa1-9e6f-1efd761e9dde)
-![Simulator Screenshot - iPhone 14 Pro Max - 2024-06-29 at 19 49 20](https://github.com/omarrris/SimpleSpend/assets/100310239/89ed13c3-c279-4dc2-82a2-b69e497034f6)
-![Simulator Screenshot - iPhone 14 Pro Max - 2024-06-29 at 19 48 38](https://github.com/omarrris/SimpleSpend/assets/100310239/30cf3603-b7a1-4e52-870e-691ddf2fb622)
-![Simulator Screenshot - iPhone 14 Pro Max - 2024-06-29 at 19 48 26](https://github.com/omarrris/SimpleSpend/assets/100310239/7c03c473-4a80-485f-951c-42b81dff26df)
+<img src="https://github.com/omarrris/SimpleSpend/assets/100310239/7bafa627-a972-4a5d-8ebc-acf65612155b" width="400" height="790">
+<img src="(https://github.com/omarrris/SimpleSpend/assets/100310239/1d81c81a-f519-4fa1-9e6f-1efd761e9dde" width="400" height="790">
+<img src="https://github.com/omarrris/SimpleSpend/assets/100310239/89ed13c3-c279-4dc2-82a2-b69e497034f6" width="400" height="790">
+<img src="https://github.com/omarrris/SimpleSpend/assets/100310239/30cf3603-b7a1-4e52-870e-691ddf2fb622" width="400" height="790">
+<img src="https://github.com/omarrris/SimpleSpend/assets/100310239/7c03c473-4a80-485f-951c-42b81dff26df" width="400" height="790">
+
 
 
 
