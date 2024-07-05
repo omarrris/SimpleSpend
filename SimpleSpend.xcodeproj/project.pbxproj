@@ -74,6 +74,7 @@
 		07A405C42C2A397F009EA2FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07A6DE522C2E6BB000AF0CFE /* SimpleSpend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleSpend.entitlements; sourceTree = "<group>"; };
 		07A6DE532C30C59B00AF0CFE /* DarkModeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeModifier.swift; sourceTree = "<group>"; };
+		07CF4EF62C3108F8009D86BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		46B0FFE635EFF7E0AC76272E /* Pods-SimpleSpend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSpend.release.xcconfig"; path = "Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend.release.xcconfig"; sourceTree = "<group>"; };
 		8C92EA87F41609056C147311 /* Pods-SimpleSpend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSpend.debug.xcconfig"; path = "Target Support Files/Pods-SimpleSpend/Pods-SimpleSpend.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +179,7 @@
 		07A405BC2C2A397E009EA2FE /* SimpleSpend */ = {
 			isa = PBXGroup;
 			children = (
+				07CF4EF62C3108F8009D86BD /* Info.plist */,
 				07A6DE522C2E6BB000AF0CFE /* SimpleSpend.entitlements */,
 				07A405BF2C2A397E009EA2FE /* ContentView.swift */,
 				07A405BD2C2A397E009EA2FE /* SimpleSpendApp.swift */,
@@ -494,6 +496,7 @@
 				DEVELOPMENT_TEAM = 532DC9GNUK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleSpend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -525,6 +528,7 @@
 				DEVELOPMENT_TEAM = 532DC9GNUK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleSpend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

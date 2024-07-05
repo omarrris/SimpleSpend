@@ -1,0 +1,37 @@
+PODS:
+  - Realm (10.49.2):
+    - Realm/Headers (= 10.49.2)
+  - Realm/Headers (10.49.2)
+  - RealmSwift (10.49.2):
+    - Realm (= 10.49.2)
+  - Sentry (7.27.0):
+    - Sentry/Core (= 7.27.0)
+  - Sentry/Core (7.27.0)
+
+DEPENDENCIES:
+  - RealmSwift (~> 10)
+  - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `7.27.0`)
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+
+EXTERNAL SOURCES:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 7.27.0
+
+CHECKOUT OPTIONS:
+  Sentry:
+    :git: https://github.com/getsentry/sentry-cocoa.git
+    :tag: 7.27.0
+
+SPEC CHECKSUMS:
+  Realm: c1a96376972e5f6c26276a0cd6dee15eeefaf53c
+  RealmSwift: db6ea9e15607653352baa42321bd9586850b7f04
+  Sentry: 026b36fdc09531604db9279e55f047fe652e3f4a
+
+PODFILE CHECKSUM: f29121fd833de17ccf3295f68e555de9bcaf3682
+
+COCOAPODS: 1.15.2

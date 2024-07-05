@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 import RealmSwift
 
@@ -9,22 +7,34 @@ struct Categories: View {
    @State private var invalidDataAlertShowing = false
    @State private var newCategoryName: String = ""
    @State private var newCategoryColor = Color(.sRGB, red: 0.98, green: 0.9, blue: 0.2)
+   @State private var errorMessage: String = ""
+   @State private var showErrorAlert = false
    
    func handleSubmit() {
        if newCategoryName.count > 0 {
-           self.realmManager.submitCategory(Category(
-               name: newCategoryName,
-               color: newCategoryColor
-           ))
-           newCategoryName = ""
+           do {
+               try self.realmManager.submitCategory(Category(
+                   name: newCategoryName,
+                   color: newCategoryColor
+               ))
+               newCategoryName = ""
+           } catch {
+               errorMessage = "Failed to submit category: \(error.localizedDescription)"
+               showErrorAlert = true
+           }
        } else {
            invalidDataAlertShowing = true
        }
    }
    
    func handleDelete(at offsets: IndexSet) {
-       if offsets.first != nil {
-           realmManager.deleteCategory(category: realmManager.categories[offsets.first!])
+       if let index = offsets.first {
+           do {
+               try realmManager.deleteCategory(category: realmManager.categories[index])
+           } catch {
+               errorMessage = "Failed to delete category: \(error.localizedDescription)"
+               showErrorAlert = true
+           }
        }
    }
    
@@ -85,6 +95,9 @@ struct Categories: View {
                        invalidDataAlertShowing = false
                    }
                }
+               .alert(isPresented: $showErrorAlert) {
+                   Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+               }
            }
            .padding(.horizontal, 16)
            .padding(.bottom, 16)
@@ -101,13 +114,11 @@ struct Categories: View {
                }
            }
        }
-       .darkMode()
    }
 }
 
 struct Categories_Previews: PreviewProvider {
    static var previews: some View {
        Categories()
-           .darkMode()
    }
 }

@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 import RealmSwift
 import AVKit
@@ -8,12 +6,13 @@ struct Add: View {
     @EnvironmentObject var realmManager: RealmManager
     
     @State private var selectedCategory: Category = Category(name: "Create a category first", color: Color.clear)
-
     @State private var amount = ""
     @State private var recurrence = Recurrence.none
     @State private var date = Date()
     @State private var note = ""
-    
+    @State private var showErrorAlert = false
+    @State private var errorMessage = ""
+
     func onAppear() {
         if realmManager.categories.count > 0 {
             self.selectedCategory = realmManager.categories[0]
@@ -27,18 +26,31 @@ struct Add: View {
     }
     
     func handleCreate() {
-        self.realmManager.submitExpense(Expense(
-            amount: Double(self.amount)!,
+        guard let amountValue = Double(self.amount) else {
+            errorMessage = "Invalid amount value."
+            showErrorAlert = true
+            return
+        }
+        
+        let newExpense = Expense(
+            amount: amountValue,
             category: self.selectedCategory,
             date: self.date,
-            note: self.note.count == 0 ? self.selectedCategory.name : self.note,
+            note: self.note.isEmpty ? self.selectedCategory.name : self.note,
             recurrence: self.recurrence
-        ))
-        self.amount = ""
-        self.recurrence = Recurrence.none
-        self.date = Date()
-        self.note = ""
-        hideKeyboard()
+        )
+        
+        do {
+            try realmManager.submitExpense(newExpense)
+            self.amount = ""
+            self.recurrence = Recurrence.none
+            self.date = Date()
+            self.note = ""
+            hideKeyboard()
+        } catch {
+            errorMessage = "Failed to submit expense: \(error.localizedDescription)"
+            showErrorAlert = true
+        }
     }
     
     var body: some View {
@@ -128,6 +140,9 @@ struct Add: View {
             }
             .padding(.top, 16)
             .navigationTitle("Add")
+            .alert(isPresented: $showErrorAlert) {
+                Alert(title: Text("Error"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+            }
         }
         .onAppear {
             onAppear()
