@@ -13,7 +13,6 @@ Developed using Swift and SwiftUI, SimpleSpend integrates secure authentication 
 - Swift
 - SwiftUI
 - Realm
-- Apple Sign-In
 - AVKit
 
 ## Download
