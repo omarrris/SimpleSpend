@@ -35,5 +35,3 @@ Distributed under the MIT License. See LICENSE for more information.
 ## Contact
 Omar Sheikh - omarr.sheikh@gmail.com
 
-Project Link: https://github.com/omarris/SimpleSpend
-
