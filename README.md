@@ -4,7 +4,6 @@ Developed using Swift and SwiftUI, SimpleSpend integrates secure authentication 
 
 ## Features
 - User-Friendly Interface: Developed using SwiftUI for a modern and intuitive user interface.
-- Secure Authentication: Integrated Apple Sign-In for secure user authentication.
 - Persistent Data Storage: Utilized Realm for efficient local data storage and retrieval.
 - Dark Mode Compatibility: Ensured dark mode support across the app for a consistent user experience.
 - Expense Tracking: Log expenses by categories and view periodical reports with custom charts.
@@ -19,6 +18,7 @@ Developed using Swift and SwiftUI, SimpleSpend integrates secure authentication 
 
 ## Download
 
+https://apps.apple.com/us/app/simplespend/id6505027490
 
 ## Screenshots
 <img src="https://github.com/omarrris/SimpleSpend/assets/100310239/7bafa627-a972-4a5d-8ebc-acf65612155b" width="400" height="790">
